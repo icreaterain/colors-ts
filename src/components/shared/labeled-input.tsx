@@ -20,6 +20,9 @@ const LabeledInput = ({
 }: LabeledInputProps) => {
   id = useId() + id;
 
+  console.log('→', 'labeled-input', 'value', value);
+  
+  
   return (
     <div>
       <label htmlFor={id}>{label}</label>

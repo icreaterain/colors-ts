@@ -1,8 +1,11 @@
+import { MouseEventHandler } from 'react';
 import ColorChangeSwatch from '../shared/color-change-swatch';
+import { HexColour } from '../../color-reducer';
 
 type RelatedColorPaletteProps = {
   title: string;
   hexColors: string[];
+  onClick?: (hexColor: HexColour) => void;
 };
 
 const RelatedColorPalette = ({

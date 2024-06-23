@@ -1,8 +1,10 @@
+import { MouseEventHandler } from 'react';
 import {
   getComplementColors,
   getTriadColors,
 } from '../../lib/get-related-colors';
 import RelatedColorPalette from './related-color-palette';
+import { HexColour } from '../../color-reducer';
 
 type RelatedColorsProps = {
   hexColor: string;
